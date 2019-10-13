@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  font-size: 62.5%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+.main__wrapper{
+  max-width: 160rem;
+  max-height: 120rem;
+  margin: auto;
+}
+.block__wrapper{
+  background-color: $color-white;
+  z-index: 1;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgb(153, 153, 153);
+  box-shadow: 0 0 1rem rgb(153, 153, 153);
+  display: block;
+  margin: 5% 5% 0 5%;
+  padding: 2%;
+  width: 90%;
+  height: 80vh;
+  max-height: 70rem;
+  min-height: 64rem;
+  &-black{
+    border:.3rem solid rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color:$color-black;
+    padding:2%;
+    position: relative;
+  }
+  &-red{
+    border:.3rem solid rgba(255, 0, 0, 0.5);
+    height: 100%;
+    color:$color-primary;
+    padding:2%;
+    position: relative;
+  }
+  &-left{
+    display: block;
+    position: absolute;
+    top:2rem;
+    left:2rem;
+  }
+  &-right{
+    display: block;
+    position: absolute;
+    bottom:2rem;
+    right:2rem;
+    transform: rotate(180deg);
+  }
+  &-card{
+    color:inherit;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+}
+.margin-left{
+  margin-left: 0.3rem;
+}
+.margin-right{
+  margin-right: 0.3rem;
+}
+.margin-top-50{
+  margin-top:5rem;
+}
+@media screen and (max-width: 880px) {
+   body,html{
+     font-size: 50%;
+   }
+}
+@media screen and (max-width: 620px) {
+   body,html{
+     font-size: 35%;
+   }
+}

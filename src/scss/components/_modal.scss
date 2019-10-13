@@ -1,0 +1,43 @@
+.close:focus {
+  text-shadow: 1px 1px 0 #000;
+}
+.modal-xl{
+  max-width: 100%;
+  margin: 2rem;
+}
+.modal{
+  background: #e07919; /* fallback for old browsers */
+  padding-right: 0 !important;
+}
+.modal-content{
+  border-radius:2.5rem; 
+  div{
+    button {
+      outline: 0px;
+      span{
+        font-weight: 100;
+        font-size: 5rem;
+        color: $color-primary;
+        padding: 2rem 2rem 0 0; 
+      }
+    }
+  }
+  .modal-footer{
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    button{
+      border: 0px;
+      font-size: 1.3rem;
+      padding: 0.8rem 2.2rem;
+    }
+    button:active{
+      background: darken($color: $color-primary, $amount: 20)
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modal-xl{
+    margin: 1rem;
+   }
+}

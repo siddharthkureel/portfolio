@@ -1,0 +1,126 @@
+.center-area{
+  color:$color-secondary;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1fr;
+  width: 100%;
+  height: 80%;
+  .left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    padding-right: 2rem;
+    justify-content: flex-end;
+    align-content: flex-start;
+    text-align: right;
+  }
+  .right{
+    width: 50%;
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4.5rem;
+    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    border-left: 3px solid $color-secondary;
+  }
+}
+.landing-area{
+  .left{
+    display: block;
+  }
+}
+.about{
+  .left{
+    font-size: 2rem;
+  }
+  .right{
+    font-size: 2.5rem;
+  }
+}
+.contact{
+  div{
+    a{
+      text-decoration: none;
+      color: $color-secondary;
+    }
+    a:hover{
+      color: darken($color: $color-secondary, $amount: 20)
+    }
+  }
+  .left{
+    display: block;
+    font-size: 2rem;
+  }
+  .right{
+    font-size: 2.5rem;
+    &__wrapper{
+      display: block;
+    }
+  }
+}
+.home__our-work{
+  height: 100%;
+  font-size: 2rem;
+  .nav-tabs{
+    display: flex;
+    justify-content: center;
+    border-bottom:0px;
+    .active {
+      outline: 0;
+      border:0;
+      border-radius: 0;
+      border-bottom: 3px solid $color-black;
+    }
+    li a{
+      background-color: transparent;
+    }
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 0; 
+  }
+  .tab-content{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    .tab-pane{
+      .row .card{
+        img{
+          height: 100%;
+          width: 100%;
+        }
+        .card-body p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+   #work{
+     height: auto;
+     max-height: initial;
+     min-height: initial;
+   }
+   .center-area{
+     padding: 5% 0;
+     .left,.right{
+       width: 100%;
+     }
+     .left{
+       align-content: flex-end;
+     }
+     .right{
+       border-left: 0;
+       border-top:0;
+     }
+   }
+}

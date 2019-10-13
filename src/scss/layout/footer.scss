@@ -1,0 +1,16 @@
+#footer {
+   position:absolute;
+   left: 0;
+   width: 100%;
+   background-color: white;
+   color: $color-secondary;
+   text-align: center;
+   font-size: 1.7rem;
+   height: 7rem;
+   margin-top:5%;
+   box-shadow: 0px 0 10px rgb(153, 153, 153);
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
